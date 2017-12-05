@@ -1,5 +1,9 @@
+body{
+    background-color: black;
+    color: white;
+}
 *{
-    border : 1px solid black;
+    border: 1px solid blue;
 }
 #header{
     margin-top: 10px;
@@ -11,4 +15,13 @@ h1{
 
 #accroche{
     text-align: center;
+}
+
+#interieur, #exterieur {
+    max-height: 350px;
+    margin: auto;
+}
+
+.carousel-caption {
+    margin: 0;
 }
