@@ -1,16 +1,28 @@
 body{
     background-color: grey;
+    background-image: url(images/fond.jpg);
 }
 
 *{
     border: 1px none blue;
 }
+
+@font-face {
+    font-family: 'neoretrodrawregular';
+    src: url("neoretrodraw_regular_macroman/NEORD___-webfont.woff") format('woff');
+}
+.container{
+    background-color: rgba(136,136,136,0.9);
+}
+
 #header{
-    margin-top: 10px;
+    margin: 20px auto;
 }
 
 h1{
     text-align: center;
+    font-family: "neoretrodrawregular";
+    font-size: 5rem;
 }
 
 #accroche{
@@ -22,7 +34,10 @@ h1{
     margin: auto;
 }
 
+#navigateur{
+    margin: 20px auto;
 
+}
 
 
 
