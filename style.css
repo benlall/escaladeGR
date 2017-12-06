@@ -1,6 +1,6 @@
 body{
-    background-color: grey;
     background-image: url(images/fond.jpg);
+    text-align: justify;
 }
 
 *{
@@ -39,7 +39,36 @@ h1{
 
 }
 
+h2 {
+    margin: 10px;
+    background-color: rgb(70,70,70);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
 
+.nouveau{
+    font-weight: bold;
+}
+
+figcaption {
+    font-size: 0.8rem;
+}
+
+table {
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+td, th {
+    border: 1px solid #839FB5;
+    text-align: center;
+    padding: 5px;
+}
+
+caption{
+    caption-side: top;
+}
 
 /* flux actualité ffme*/.rss_titre {
                             margin: 5px;
