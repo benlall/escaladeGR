@@ -15,11 +15,11 @@
         <header class="container rounded" id="header">
                        
                 <div class="row align-items-center">
-                    <div class="col-md-5">
+                    <div class="col-md-5 text-center">
                         <h1>Glace &amp; Roc</h1>
-                        <h5 id="accroche">Clud d'escalade basé à La-Côte-Saint-André</h5>
+                        <h5 id="accroche">Club d'escalade basé à La-Côte-Saint-André</h5>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 text-center">
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -50,7 +50,7 @@
                 </div>                     
         </header>
         
-        <div class="container rounded" id="navigateur">
+<!--nav--><div class="container rounded" id="navigateur">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -86,8 +86,9 @@
         </div>
         
         <section class="container rounded">
+            
             <div class="row" id="ligne1">
-                <div class="col-md-8 mr-auto">
+<!--News club--><div class="col-lg-8 text-center">
                     <h2 id="news">News du club</h2>
                     <div class="row">
                         <div class="col-md-6">
@@ -100,7 +101,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-center">
                             <div class="card" style="width: 20rem;">
                                 <img class="card-img-top" src="images/initiation_mur.jpg" alt="initiation au mur">
                                 <div class="card-body">
@@ -111,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" id="ffme">
+<!--FFME-->     <div class="col-lg-4 text-center" id="ffme">
                     <div class="row">
                         <div class="col-md-12">
                             <h2>FFME</h2>
@@ -141,14 +142,14 @@
             </div>
                         
             <div class="row" id="ligne2">
-<!--info club--><div class="col-md-9 mr-auto" id="info">
+<!--info club--><div class="col-md-9 text-center" id="info">
                     <h2>Info club</h2>
                     <div class="row">
 <!--Qui sommes-nous-->  <div class="col-md-5">
                             <h4 id="qui_sommes_nous">Qui sommes-nous</h4>
                             <p>Le club est une association loi 1901.<br>De Septembre à Juin, nous grimpons les mardi et jeudi de 18h à 22h à la salle Jean Boyer à La Côte.<br>Dès que les beaux jours sont là, nous en profitons pour aller grimper à l'exterieur principalement le samedi.</p>
                             <iframe class="img-fluid rounded" src="https://www.google.com/maps/d/embed?mid=16rGivRWaQBjxLJv-NybO7-iBwR6Fnn0W"></iframe>
-                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#contact">Vous avez une question ? Contactez-nous</button> 
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#contact">Vous avez une question ? Contactez-nous</button> <br>
 <!-- Modal Contactez-nous --><div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
                               <div class="modal-dialog" role="document">
                                 <div class="modal-content">
@@ -178,9 +179,41 @@
                                 </div>
                               </div>
                             </div>
+                        
+<!--espace licencié-->      <h5 id="licenciés">Espace licenciés</h5>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#connexion_licencié" >Connectez-vous</button>
+<!--Modal connexion licentié--><div class="modal fade" id="connexion_licencié" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="ModalLabel3">Pour accéder à l'espace licencié : connectez-vous</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+        <!-- formulaire de connection--><form>
+                                            <div class="form-group">
+                                                <label for="login">Login :</label>
+                                                <input type="email" id="login" class="form-control" placeholder="email communiqué lors de votre inscription au club">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mot_passe">Mot de passe:</label>
+                                                <input type="password" id="mot_passe" class="form-control">
+                                            </div>
+                                        </form>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Connection</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        
                         </div>
                         
-<!--modalité inscrip--> <div class="col-md-4">
+<!--modalité inscrip--> <div class="col-md-7">
                             <h4 id="inscriptions">Modalité d'inscription</h4>
                             <p> Les inscriptions ou les renouvellements des licences se feront à la salle à partir de 19h sous la responsabilité du trésorier. Les documents à fournir sont :</p>
                             <ul>
@@ -266,42 +299,10 @@
                             </ul>
                         </div>
                         
-  <!--espace licencié--><div class="col-md-3">
-                            <h4 id="licenciés">Espace licenciés</h4>
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#connexion_licencié" >Connectez-vous</button>
-<!--Modal connexion licentié--><div class="modal fade" id="connexion_licencié" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
-                                  <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="ModalLabel3">Pour accéder à l'espace licencié : connectez-vous</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                        </button>
-                                      </div>
-                                      <div class="modal-body">
-        <!-- formulaire de connection--><form>
-                                            <div class="form-group">
-                                                <label for="login">Login :</label>
-                                                <input type="email" id="login" class="form-control" placeholder="email communiqué lors de votre inscription au club">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="mot_passe">Mot de passe:</label>
-                                                <input type="password" id="mot_passe" class="form-control">
-                                            </div>
-                                        </form>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Connection</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                        </div> 
-                    </div>
+                     </div>
                 </div>
                 
-                <div class="col-md-3" id="partenariat">
+<!--partenari--><div class="col-md-3 text-center" id="partenariat">
                     <h2 id="partenariats">Partenariats</h2>
                 </div>
             </div>
@@ -309,9 +310,9 @@
         </section>
         
         <footer class="text-center">
-            <div class="container">
+            <div class="container rounded">
                 <hr>
-                <p>&copy; Glace et Roc 2017</p>
+                <p id="footer">&copy; Glace et Roc 2017</p>
             </div>
         </footer>
         

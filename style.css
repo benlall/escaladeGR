@@ -1,6 +1,5 @@
 body{
     background-image: url(images/fond.jpg);
-    text-align: justify;
 }
 
 *{
@@ -20,13 +19,8 @@ body{
 }
 
 h1{
-    text-align: center;
     font-family: "neoretrodrawregular";
     font-size: 5rem;
-}
-
-#accroche{
-    text-align: center;
 }
 
 #interieur, #exterieur {
@@ -42,7 +36,6 @@ h1{
 h2 {
     margin: 10px;
     background-color: rgb(70,70,70);
-    text-align: center;
     border-radius: 10px;
     color: white;
 }
@@ -68,6 +61,14 @@ td, th {
 
 caption{
     caption-side: top;
+}
+
+p, ul{
+    text-align: justify;
+}
+
+#footer{
+    text-align: center;
 }
 
 /* flux actualité ffme*/.rss_titre {
