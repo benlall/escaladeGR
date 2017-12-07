@@ -27,6 +27,9 @@ h1{
     max-height: 350px;
     margin: auto;
 }
+.header {
+    text-align: center;
+}
 
 #navigateur{
     margin: 20px auto;
@@ -60,7 +63,7 @@ td, th {
 }
 
 caption{
-    caption-side: top;
+    caption-side: top-outside;
 }
 
 p, ul{

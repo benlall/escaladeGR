@@ -1,15 +1,3 @@
-$(function(){
-    $("bouton_formulaire").click(function(){
-            console.log("Votre demande à été envoyé, nous vous répondrons rapidemment";
-    });
-});
-
-
-
-
-
-
-
 
 
 

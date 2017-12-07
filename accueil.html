@@ -8,32 +8,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         
     </head>
     <body>
         <header class="container rounded" id="header">
                        
                 <div class="row align-items-center">
-                    <div class="col-md-5 text-center">
+                    <div class="col-md-6 text-center">
                         <h1>Glace &amp; Roc</h1>
                         <h5 id="accroche">Club d'escalade basé à La-Côte-Saint-André</h5>
                     </div>
-                    <div class="col-md-7 text-center">
-                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="col-md-6 text-center">
+                        <div id="carousel" class="carousel slide" data-ride="false" data-interval="10000">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="d-block img-fluid" id="interieur" src="images/mur.jpg" alt="mur">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h3>Interieur</h3>
-                                        <p>Grimpe au mur de Septembre à Juin</p>
+                                        <p class="header">Grimpe au mur de Septembre à Juin</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block img-fluid" id="exterieur" src="images/calanques.jpg" alt="exterieur">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h3>Exterieur</h3>
-                                        <p>Toute l'année quand la méteo le permet</p>
+                                        <p class="header">Toute l'année quand la méteo le permet</p>
                                     </div>
                                 </div>
                           </div>
@@ -75,7 +76,7 @@
                             <a class="nav-link" href="#ffme">FFME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#partenariats">Partenariats</a>
+                            <a class="nav-link" href="#partenaires">Partenaires</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="modal" href="#contact">Contactez nous</a>
@@ -87,21 +88,18 @@
         
         <section class="container rounded">
             
-            <div class="row" id="ligne1">
+            <div class="row justify-content-center" id="ligne1">
 <!--News club--><div class="col-lg-8 text-center">
                     <h2 id="news">News du club</h2>
-                    <div class="row">
-                        <div class="col-md-6">
+                        <div class="d-flex align-items-start flex-row justify-content-around flex-wrap">
                             <div class="card" style="width: 20rem;">
                                 <img class="card-img-top" src="images/noel.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h4 class="card-title">Repas de fin d'année</h4>
                                     <p class="card-text">Il est temps de penser au repas de fin d'année. Je vous propose le jeudi 7 décembre à la salle jean Boyer à partir de 19h30. Grimpe possible ce jour là entre 18h et 19h30 seulement. Comme toujours il faut vous inscrire dans l'espace licencié : déjà pour savoir si vous serez présents et si oui ce que vous allez apporté (cela pour éviter de n’avoir par exemple que du sucré). Pour les nouveaux, le principe chacun prépare et amène ce qu’il veut et nous mettons en commun. Un bon moment de convivialité pour se retrouver et échanger autrement qu’au pied du mur.</p>
-                                    <button class="btn btn-primary" data-toggle="modal" data-target="#connexion_licencié" >Connectez-vous</button>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#connexion_licencié">Connectez-vous</button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-center">
+                            </div>            
                             <div class="card" style="width: 20rem;">
                                 <img class="card-img-top" src="images/initiation_mur.jpg" alt="initiation au mur">
                                 <div class="card-body">
@@ -110,7 +108,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
 <!--FFME-->     <div class="col-lg-4 text-center" id="ffme">
                     <div class="row">
@@ -122,11 +119,7 @@
                         <div class="col-md-12">
                             <a href="http://www.ffme.fr/">site officiel de la FFME</a>
 <!-- flux actualité ffme--> <div class="example">
-                                <div class="post_results" id="post_results1" rss_num="5" rss_url="http://www.ffme.fr/toutes-les-actualites-flux.atom">
-                                    <div class="loading_rss">
-                                        <img src="images/logo_ffme.png" alt="logo ffme"/>
-                                    </div>
-                                </div>
+                                <img src="images/logo_ffme.png" alt="logo ffme">
                             </div>
                         </div>
                     </div>
@@ -141,15 +134,15 @@
                 </div>
             </div>
                         
-            <div class="row" id="ligne2">
-<!--info club--><div class="col-md-9 text-center" id="info">
+            <div class="row justify-content-center" id="ligne2">
+<!--info club--><div class="col-lg-9 text-center" id="info">
                     <h2>Info club</h2>
                     <div class="row">
 <!--Qui sommes-nous-->  <div class="col-md-5">
                             <h4 id="qui_sommes_nous">Qui sommes-nous</h4>
                             <p>Le club est une association loi 1901.<br>De Septembre à Juin, nous grimpons les mardi et jeudi de 18h à 22h à la salle Jean Boyer à La Côte.<br>Dès que les beaux jours sont là, nous en profitons pour aller grimper à l'exterieur principalement le samedi.</p>
-                            <iframe class="img-fluid rounded" src="https://www.google.com/maps/d/embed?mid=16rGivRWaQBjxLJv-NybO7-iBwR6Fnn0W"></iframe>
-                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#contact">Vous avez une question ? Contactez-nous</button> <br>
+                            <iframe class="img-fluid rounded w-100" src="https://www.google.com/maps/d/embed?mid=16rGivRWaQBjxLJv-NybO7-iBwR6Fnn0W"></iframe>
+                            <button type="button" class="btn btn-secondary w-50" data-toggle="modal" data-target="#contact">Contactez-nous</button> <br>
 <!-- Modal Contactez-nous --><div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
                               <div class="modal-dialog" role="document">
                                 <div class="modal-content">
@@ -186,7 +179,7 @@
                                   <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                       <div class="modal-header">
-                                        <h5 class="modal-title" id="ModalLabel3">Pour accéder à l'espace licencié : connectez-vous</h5>
+                                        <h5 class="modal-title" id="ModalLabel3">Espace licencié reservé aux membres du club :<br>connectez-vous</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                         </button>
@@ -195,7 +188,7 @@
         <!-- formulaire de connection--><form>
                                             <div class="form-group">
                                                 <label for="login">Login :</label>
-                                                <input type="email" id="login" class="form-control" placeholder="email communiqué lors de votre inscription au club">
+                                                <input type="email" id="login" class="form-control" placeholder="email d'inscription au club">
                                             </div>
                                             <div class="form-group">
                                                 <label for="mot_passe">Mot de passe:</label>
@@ -232,7 +225,7 @@
                                     </button>
                                   </div>
   <!-- tableau tarifs-->          <div class="modal-body">
-                                    <table>
+                                    <table class="table table-responsive">
                                         <tr>
                                             <th></th>
                                             <th>Adultes</th>
@@ -302,8 +295,8 @@
                      </div>
                 </div>
                 
-<!--partenari--><div class="col-md-3 text-center" id="partenariat">
-                    <h2 id="partenariats">Partenariats</h2>
+<!--partenair--><div class="col-lg-3 text-center" id="partenaires">
+                    <h2>Partenaires</h2>
                 </div>
             </div>
             
