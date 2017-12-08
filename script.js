@@ -1,4 +1,4 @@
-
+$('.item').css('min-height',$('.item').height());
 
 
 /* flux actualité ffme*/
