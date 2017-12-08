@@ -21,7 +21,7 @@
                         <h5 id="accroche">Club d'escalade basé à La-Côte-Saint-André</h5>
                     </div>
                     <div class="col-md-6">
-                        <div id="carousel" class="carousel slide" data-ride="false" data-interval="10000">
+                        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="d-block" id="interieur" src="images/mur.jpg" alt="mur">
@@ -97,7 +97,6 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Repas de fin d'année</h4>
                                     <p class="card-text">Il est temps de penser au repas de fin d'année. Je vous propose le jeudi 7 décembre à la salle jean Boyer à partir de 19h30. Grimpe possible ce jour là entre 18h et 19h30 seulement. Comme toujours il faut vous inscrire dans l'espace licencié : déjà pour savoir si vous serez présents et si oui ce que vous allez apporté (cela pour éviter de n’avoir par exemple que du sucré). Pour les nouveaux, le principe chacun prépare et amène ce qu’il veut et nous mettons en commun. Un bon moment de convivialité pour se retrouver et échanger autrement qu’au pied du mur.</p>
-                                    <button class="btn btn-primary" data-toggle="modal" data-target="#connexion_licencié">Connectez-vous</button>
                                 </div>
                             </div>            
                             <div class="card" style="width: 20rem;">
@@ -111,36 +110,60 @@
                 </div>
 <!--lic+part --><div class="col-lg-4 text-center" >
 <!--espace licen--> <h2 id="licenciés">Espace licenciés</h2>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#connexion_licencié" >Connectez-vous</button>
-<!--Modal connexion licentié--><div class="modal fade" id="connexion_licencié" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
-                                  <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="ModalLabel3">Espace licencié reservé aux membres du club :<br>connectez-vous</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                        </button>
-                                      </div>
-                                      <div class="modal-body">
-        <!-- formulaire de connection--><form>
-                                            <div class="form-group">
-                                                <label for="login">Login :</label>
-                                                <input type="email" id="login" class="form-control" placeholder="email d'inscription au club">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="mot_passe">Mot de passe:</label>
-                                                <input type="password" id="mot_passe" class="form-control">
-                                            </div>
-                                        </form>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Connection</button>
-                                      </div>
-                                    </div>
+                    <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#connexion_licencié" >Connectez-vous</button>
+                
+<!--Modal connection licencié-->
+                    <div class="modal fade" id="connexion_licencié" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel3">Espace licencié reservé aux membres du club :<br>connectez-vous</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                  <div class="modal-body">
+     <!-- formulaire de connection--><form>
+                                        <div class="form-group">
+                                            <label for="login">Login :</label>
+                                            <input type="email" id="login" class="form-control" placeholder="email d'inscription au club">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mot_passe">Mot de passe:</label>
+                                            <input type="password" id="mot_passe" class="form-control">
+                                        </div>
+                                    </form>
                                   </div>
-                                </div>                
+                                  <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="submit" class="btn btn-primary">Connection</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>                
                     <h2 id="partenaires">Partenaires</h2>
+                    <div class="row">
+                        <div class="col-5">
+                            <a href="https://fr-fr.facebook.com/gozzisports/"><img class="w-75 img-thumbnail" src="images/gozzi_voiron.jpg"></a>
+                        </div>
+                        <div class="col-7">
+                            <p>20% de réduction sur le rayon escalade et ski de randonnée</p><br>
+                        </div>
+                     </div>   
+                     <div class="row">
+                        <div class="col-5">
+                            <a href="https://www.expe.fr/"><img class="w-75 img-thumbnail" src="images/expe.png"></a>
+                        </div>
+                        <div class="col-7">
+                            <p>10% de réduction aux licenciés FFME sur présentation de la licence en cours. Valable dans tous nos magasins, ainsi que sur notre site Internet en le précisant dans le commentaire de la commande et en nous envoyant une copie de la licence.</p>
+                        </div>
+                     </div>    
+                     <div class="row">
+                        <div class="col-5">
+                            <a href="https://www.auvieuxcampeur.fr/"><img class="w-75 img-thumbnail" src="images/vieux_camp.jpg"></a>
+                        </div>
+                        <div class="col-7">
+                            <p>15% de réduction aux licenciés FFME sur les cartes cadeaux de 10, 50 et 100 euros.</p>
+                        </div>
+                     </div>                             
                 </div>
             </div>
                         
@@ -150,122 +173,130 @@
                     <div class="row">
 <!--Qui sommes-nous-->  <div class="col-md-5">
                             <h4 id="qui_sommes_nous">Qui sommes-nous</h4>
-                            <p>Le club est une association loi 1901.<br>De Septembre à Juin, nous grimpons les mardi et jeudi de 18h à 22h à la salle Jean Boyer à La Côte.<br>Dès que les beaux jours sont là, nous en profitons pour aller grimper à l'exterieur principalement le samedi.</p>
-                            <iframe class="img-fluid rounded w-100" src="https://www.google.com/maps/d/embed?mid=16rGivRWaQBjxLJv-NybO7-iBwR6Fnn0W"></iframe>
-                            <button type="button" class="btn btn-secondary w-50" data-toggle="modal" data-target="#contact">Contactez-nous</button> <br>
-<!-- Modal Contactez-nous --><div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="ModalLabel">Formulaire de contact</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                  </div>
-                                  <div class="modal-body">
-        <!-- formulaire de contact--><form>
-                                        <div class="form-group">
-                                            <label for="name">Nom et prénom :</label>
-                                            <input type="text" id="name" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">Email :</label>
-                                            <input type="text" id="email" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="comment">Redigez votre question :</label>
-                                            <textarea class="form-control" id="comment"></textarea>
-                                        </div>
-                                    </form>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button id="bouton_formulaire" type="submit" class="btn btn-primary">Envoyez votre demande d'info</button>
-                                  </div>
-                                </div>
-                              </div>
+                            <p>Le club est une association loi 1901.<br>De Septembre à Juin, nous grimpons les mardi et jeudi de 18h à 22h à la salle Jean Boyer à La Côte</p>
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item rounded" src="https://www.google.com/maps/d/embed?mid=16rGivRWaQBjxLJv-NybO7-iBwR6Fnn0W"></iframe>
                             </div>
+                            <br>
+                            <p>Dès que les beaux jours sont là, nous en profitons pour aller grimper à l'exterieur principalement le samedi.</p>
+                            <button type="button" class="btn btn-secondary w-100 btn-lg d-block" data-toggle="modal" data-target="#contact">Contactez-nous</button>
+                            <a href="doc/reglement%20interieur%202017.pdf">Réglement interieur 2017</a>
+                        
+<!-- Modal Contactez-ns --> <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLabel">Formulaire de contact</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+ <!-- formulaire de contact-->              <form>
+                                            <div class="form-group">
+                                                <label for="name">Nom et prénom :</label>
+                                                <input type="text" id="name" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email :</label>
+                                                <input type="text" id="email" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="comment">Redigez votre question :</label>
+                                                <textarea class="form-control" id="comment"></textarea>
+                                            </div>
+                                        </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                            <button id="bouton_formulaire" type="submit" class="btn btn-primary">Envoyez votre demande d'info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         </div>
                         
 <!--modalité inscrip--> <div class="col-md-7">
                             <h4 id="inscriptions">Modalité d'inscription</h4>
                             <p> Les inscriptions ou les renouvellements des licences se feront à la salle à partir de 19h sous la responsabilité du trésorier. Les documents à fournir sont :</p>
                             <ul>
-                                <li>La fiche d’inscription. <span class="nouveau">Nouveauté 2017</span> sur la fiche : on vous demande votre acceptation ou non de diffuser votre mail et téléphone  aux autres membres du club afin de facilité les échanges entre tous. <a>pdf</a></li>
-                                <li>Un certificat médical. Il doit être fourni dans les plus brefs délais, le club se réserverait le droit d'interdiction au mur. <span class="nouveau">Nouveauté 2017</span> : Si votre  certificat médical a moins de 3 ans : il suffit de remplir le questionnaire de santé. <a>pdf</a> En effet le certificat médical est desormais valable 3 ans.</li>
+                                <li>La fiche d’inscription. <span class="nouveau">Nouveauté 2017</span> sur la fiche : on vous demande votre acceptation ou non de diffuser votre mail et téléphone  aux autres membres du club afin de facilité les échanges entre tous. <a href="doc/formulaire-inscription-saison%202017-2018.pdf">Telecharger</a></li>
+                                <li>Un certificat médical. Il doit être fourni dans les plus brefs délais, le club se réserverait le droit d'interdiction au mur.<span class="nouveau"> Nouveauté 2017</span> : Si votre  certificat médical a moins de 3 ans : il suffit de remplir le questionnaire de santé. <a href="doc/QS-SPORT%20cerfa_15699%5B608%5D.pdf">Telecharger</a> En effet le certificat médical est desormais valable 3 ans.</li>
                                 <li>La fiche assurance (à remplir sur place).</li>
                                 <li>Le cheque correspondant au prix de l'adhesion au club et licence ffme + assurance (aucune licence ne sera délivrée sans paiement)
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Tarifs">Tarifs</button>
-       <!-- Modal Tarifs--><div class="modal fade" id="Tarifs" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="ModalLabel2">Tarifs 2017-2017</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-  <!-- tableau tarifs-->          <div class="modal-body">
-                                    <table class="table table-responsive">
-                                        <tr>
-                                            <th></th>
-                                            <th>Adultes</th>
-                                            <th>Jeunes</th>
-                                            <th>Famille* (adulte)</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Sans assurance **</td>
-                                            <td>89 &euro;</td>
-                                            <td>56 &euro;</td>
-                                            <td>65 &euro;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Assurance Base</td>
-                                            <td>97 &euro;</td>
-                                            <td>64 &euro;</td>
-                                            <td>71 &euro;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Assurance Base+</td>
-                                            <td>100 &euro;</td>
-                                            <td>67 &euro;</td>
-                                            <td>74 &euro;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Assurance Base++</td>
-                                            <td>107 &euro;</td>
-                                            <td>74 &euro;</td>
-                                            <td>81 &euro;</td>
-                                        </tr>
-                                    </table>
-                                    <p>* tarif famille à partir de 3 personnes<br>** justificatif d'assurance personnel à fournir obligatoirement lors de l'inscription</p>
-                                    <table>
-                                        <caption>options facultatives</caption>
-                                        <tr>
-                                            <th></th>
-                                            <th>Prix</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Ski pistes</td>
-                                            <td>5 &euro;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Slackline</td>
-                                            <td>5 &euro;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trail</td>
-                                            <td>10 &euro;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>VTT</td>
-                                            <td>30 &euro;</td>
-                                        </tr>
-                                    </table>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#Tarifs">Tarifs</button>
+                                    
+<!-- Modal Tarifs-->                <div class="modal fade" id="Tarifs" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel2">Tarifs 2017-2017</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+<!-- tableau tarifs-->                          <div class="modal-body">
+                                            <table class="table table-responsive">
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Adultes</th>
+                                                    <th>Jeunes</th>
+                                                    <th>Famille* (adulte)</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sans assurance **</td>
+                                                    <td>89 &euro;</td>
+                                                    <td>56 &euro;</td>
+                                                    <td>65 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Assurance Base</td>
+                                                    <td>97 &euro;</td>
+                                                    <td>64 &euro;</td>
+                                                    <td>71 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Assurance Base+</td>
+                                                    <td>100 &euro;</td>
+                                                    <td>67 &euro;</td>
+                                                    <td>74 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Assurance Base++</td>
+                                                    <td>107 &euro;</td>
+                                                    <td>74 &euro;</td>
+                                                    <td>81 &euro;</td>
+                                                </tr>
+                                            </table>
+                                            <p>* tarif famille à partir de 3 personnes<br>** justificatif d'assurance personnel à fournir obligatoirement lors de l'inscription</p>
+                                            <table>
+                                                <caption>options facultatives</caption>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Prix</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ski pistes</td>
+                                                    <td>5 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slackline</td>
+                                                    <td>5 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trail</td>
+                                                    <td>10 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>VTT</td>
+                                                    <td>30 &euro;</td>
+                                                </tr>
+                                            </table>
+                                          </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -274,31 +305,18 @@
                 </div>
                 
 <!--FFME-->     <div class="col-lg-4 text-center" id="ffme">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>FFME</h2>
-                        </div>
+                    <h2>FFME</h2>
+                    <a id="siteffme" href="http://www.ffme.fr/">site officiel de la FFME</a>
+<!-- rss ffme-->    <div class="example">
+                        <img class="img-fluid w-50" src="images/logo.png" alt="logo ffme">
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a href="http://www.ffme.fr/">site officiel de la FFME</a>
-<!-- flux actualité ffme--> <div class="example">
-                                <img src="images/logo_ffme.png" alt="logo ffme">
-                            </div>
-                        </div>
+<!--video fede-->   <div class="embed-responsive embed-responsive-16by9">
+                            <video class="embed-responsive-item rounded" width="625" height="461" controls preload="none"><source src="images/FFME%20-%20Clip%20officiel.mp4" type="video/mp4" ></video>
                     </div>
-    <!--video fede--><div class="row">
-                        <div class="col-md-12">
-                            <figure>  
-                                <video class="img-fluid" width="625" height="461" controls preload="none">Votre navigateur ne permet pas de lire les vidéos, vous pouvez la regarder directement sur le site de ma ffme<source src="images/CDM_2017.mp4" type="video/mp4" ></video>
-                                <figcaption>Video de la Coupe du Monde de difficulté 2017 à Briançon</figcaption>
-                            </figure>  
-                       </div>
-                    </div>
-                </div>                
-
+                    <p>Si votre navigateur ne permet pas de lire la vidéo, cliquez <a href="https://www.youtube.com/watch?v=lh2wEyod9cg">ici</a></p>
+               </div>
             </div>
-            
+             
         </section>
         
         <footer class="text-center">

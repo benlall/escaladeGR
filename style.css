@@ -56,6 +56,9 @@ h2 {
     font-family: "neoretrodrawregular";
     overflow: auto;
 }
+.card{
+    background-color: rgb(252,252,252);
+}
 
 .nouveau{
     font-weight: bold;
@@ -84,6 +87,10 @@ p, ul{
     text-align: justify;
 }
 
+#siteffme{
+    color: rgb(0,154,217);
+    font-weight: bold;
+}
 #footer{
     text-align: center;
 }
