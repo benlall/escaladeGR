@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+        <!--Font awesome-->
+        <script src="https://use.fontawesome.com/a53276cd18.js"></script>
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="style.css"/>
         
@@ -58,27 +60,27 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item active page-scroll">
                             <a class="nav-link" id="accueil" href="#accueil">Accueil<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info Club</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#qui_sommes_nous">Qui sommes-nous</a>
-                                <a class="dropdown-item" href="#inscriptions">Modalités d'inscriptions</a>
-                                <a class="dropdown-item" href="#archives">Archives</a>
+                                <a class="dropdown-item page-scroll" href="#qui_sommes_nous">Qui sommes-nous</a>
+                                <a class="dropdown-item page-scroll" href="#inscriptions">Modalités d'inscriptions</a>
+                                <a class="dropdown-item page-scroll" href="#archives">Archives</a>
                                 <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#licenciés">Espace licenciés</a>
+                                    <a class="dropdown-item page-scroll" href="#licenciés">Espace licenciés</a>
                                 </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#news">News du club</a>
+                            <a class="nav-link page-scroll" href="#news">News du club</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#ffme">FFME</a>
+                            <a class="nav-link page-scroll" href="#ffme">FFME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#partenaires">Partenaires</a>
+                            <a class="nav-link page-scroll" href="#partenaires">Partenaires</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="modal" href="#contact">Contactez nous</a>
@@ -205,7 +207,7 @@
                                                 <input type="text" id="email" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label for="comment">Redigez votre question :</label>
+                                                <label for="comment">Message :</label>
                                                 <textarea class="form-control" id="comment"></textarea>
                                             </div>
                                         </form>
@@ -223,12 +225,31 @@
 <!--modalité inscrip--> <div class="col-md-7">
                             <h4 id="inscriptions">Modalité d'inscription</h4>
                             <p> Les inscriptions ou les renouvellements des licences se feront à la salle à partir de 19h sous la responsabilité du trésorier. Les documents à fournir sont :</p>
-                            <ul>
-                                <li>La fiche d’inscription. <span class="nouveau">Nouveauté 2017</span> sur la fiche : on vous demande votre acceptation ou non de diffuser votre mail et téléphone  aux autres membres du club afin de facilité les échanges entre tous. <a href="doc/formulaire-inscription-saison%202017-2018.pdf">Telecharger</a></li>
-                                <li>Un certificat médical. Il doit être fourni dans les plus brefs délais, le club se réserverait le droit d'interdiction au mur.<span class="nouveau"> Nouveauté 2017</span> : Si votre  certificat médical a moins de 3 ans : il suffit de remplir le questionnaire de santé. <a href="doc/QS-SPORT%20cerfa_15699%5B608%5D.pdf">Telecharger</a> En effet le certificat médical est desormais valable 3 ans.</li>
-                                <li>La fiche assurance (à remplir sur place).</li>
-                                <li>Le cheque correspondant au prix de l'adhesion au club et licence ffme + assurance (aucune licence ne sera délivrée sans paiement)
+                            <div class="col-11 ml-auto">   
+                                <ul>
+                                    <li>La fiche d’inscription. <span class="nouveau">Nouveauté 2017</span> : on vous demande votre acceptation ou non de diffuser votre mail et téléphone  aux autres membres du club afin de facilité les échanges entre tous. </li>
+                                    <li>Un certificat médical. Il doit être fourni dans les plus brefs délais, le club se réserverait le droit d'interdiction au mur.<span class="nouveau"> Nouveauté 2017</span> : Si votre  certificat médical a moins de 3 ans : il suffit de remplir le questionnaire de santé.  En effet le certificat médical est desormais valable 3 ans.</li>
+                                    <li>La fiche assurance (à remplir sur place).</li>
+                                    <li>Le cheque correspondant au prix de l'adhesion au club et licence ffme + assurance (aucune licence ne sera délivrée sans paiement)
+                                    </li>
+                                </ul>    
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <i class="fa fa-download" aria-hidden="true"><br><a href="doc/formulaire-inscription-saison-2017-2018.pdf">Formulaire d'inscription</a></i>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <i class="fa fa-download" aria-hidden="true"><br><a href="doc/QS-SPORT_cerfa_15699%5B608%5D.pdf">Questionnaire santé</a></i>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <i class="fa fa-file" aria-hidden="true"><br><a href="doc/2018-notice-assurance.pdf">Notice assurance</a></i>
+                                </div>
+                                <div class="col-md-3 col-6">
                                     <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#Tarifs">Tarifs</button>
+                                </div>
+                            </div>
+    
+                                    
                                     
 <!-- Modal Tarifs-->                <div class="modal fade" id="Tarifs" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
@@ -302,8 +323,7 @@
                                         </div>
                                     </div>
                                     
-                                </li>
-                            </ul>
+                           
                         </div>
                         
                      </div>
@@ -324,7 +344,7 @@
             <div class="container rounded">
                 <hr>
                 <p id="footer">&copy; Glace et Roc 2017</p>
-                <a href="doc/reglement%20interieur%202017.pdf">Réglement interieur 2017</a>
+                <a href="doc/reglement_interieur%202017.pdf">Réglement interieur 2017</a>
             </div>
         </footer>
         
