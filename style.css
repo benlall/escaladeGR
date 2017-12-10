@@ -1,6 +1,7 @@
 body{
     background: no-repeat top right url(images/img_4622_3.jpg);
     background-color: rgb(16,16,16);
+    font-family: Tahoma sans-serif;
 }
 
 *{
@@ -54,12 +55,18 @@ h2 {
     border-radius: 10px;
     color: rgb(252,252,252);
     font-family: "neoretrodrawregular";
-    overflow: auto;
 }
 .card{
     background-color: rgb(252,252,252);
+    margin: 5px;
 }
 
+h4{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(252,252,252);
+    border-radius: 10px;
+}
 .nouveau{
     font-weight: bold;
 }
@@ -98,6 +105,8 @@ caption{
 
 p, ul{
     text-align: justify;
+    margin:5px;
+    padding: 5px;
 }
 
 #siteffme{
