@@ -92,6 +92,9 @@ table {
     border-collapse: separate;
     empty-cells: hide;
 }
+.table td, .table th{
+    border: 1px solid #839FB5;
+}
 
 td, th {
     border: 1px solid #839FB5;
@@ -100,7 +103,8 @@ td, th {
 }
 
 caption{
-    caption-side: top-outside;
+    caption-side: top;
+    color: rgb(0, 204, 0);
 }
 
 p, ul{
@@ -109,6 +113,9 @@ p, ul{
     padding: 5px;
 }
 
+#reglement{
+    margin: 20px 0;
+}
 #siteffme{
     color: rgb(0,154,217);
     margin: auto;
@@ -118,7 +125,7 @@ p, ul{
     margin: 10px;
 }
 
-#footer{
+.footer{
     text-align: center;
 }
 

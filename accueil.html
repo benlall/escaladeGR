@@ -143,11 +143,11 @@
                               </div>
                         </div>
                     <h2 id="archives">Archives</h2>
-                    <a href="">Les archives du club, c'est ici</a>
+                    <a href="#">Les archives du club, ce sera ici</a>
                     <h2 id="partenaires">Partenaires</h2>
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="col-5">
-                            <a href="https://fr-fr.facebook.com/gozzisports/"><img class="w-75 img-thumbnail" src="images/gozzi_voiron.jpg"></a>
+                            <a href="https://fr-fr.facebook.com/gozzisports/"><img class="w-75 img-thumbnail" src="images/gozzi_voiron.jpg" alt="lien vers Gozzi Voiron"></a>
                         </div>
                         <div class="col-7">
                             <p>20% de réduction sur le rayon escalade et ski de randonnée</p>
@@ -155,7 +155,7 @@
                      </div>   
                      <div class="d-flex justify-content-center align-items-center">
                         <div class="col-5">
-                            <a href="https://www.expe.fr/"><img class="w-75 img-thumbnail" src="images/expe.png"></a>
+                            <a href="https://www.expe.fr/"><img class="w-75 img-thumbnail" src="images/expe.png" alt="lien vers expé"></a>
                         </div>
                         <div class="col-7">
                             <p>10% de réduction aux licenciés FFME sur présentation de la licence en cours. Valable dans tous nos magasins, ainsi que sur notre site Internet en le précisant dans le commentaire de la commande et en nous envoyant une copie de la licence.</p>
@@ -163,7 +163,7 @@
                      </div>    
                      <div class="d-flex justify-content-center align-items-center">
                         <div class="col-5">
-                            <a href="https://www.auvieuxcampeur.fr/"><img class="w-75 img-thumbnail" src="images/vieux_camp.jpg"></a>
+                            <a href="https://www.auvieuxcampeur.fr/"><img class="w-75 img-thumbnail" src="images/vieux_camp.jpg" alt="lien vers le vieux campeur"></a>
                         </div>
                         <div class="col-7">
                             <p>15% de réduction aux licenciés FFME sur les cartes cadeaux de 10, 50 et 100 euros.</p>
@@ -187,7 +187,9 @@
                             <div class="d-flex justify-content-center">
                                 <button type="button" class="btn btn-secondary w-75 btn-lg" data-toggle="modal" data-target="#contact">Contactez-nous</button>
                             </div>
-                            
+                            <div class="d-flex justify-content-center" id="reglement">    
+                                <i class="fa fa-file-text" aria-hidden="true"><br><a href="doc/reglement_interieur%202017.pdf">Réglement interieur 2017</a></i>
+                            </div>
                         
 <!-- Modal Contactez-ns --> <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -230,8 +232,7 @@
                                     <li>La fiche d’inscription. <span class="nouveau">Nouveauté 2017</span> : on vous demande votre acceptation ou non de diffuser votre mail et téléphone  aux autres membres du club afin de facilité les échanges entre tous. </li>
                                     <li>Un certificat médical. Il doit être fourni dans les plus brefs délais, le club se réserverait le droit d'interdiction au mur.<span class="nouveau"> Nouveauté 2017</span> : Si votre  certificat médical a moins de 3 ans : il suffit de remplir le questionnaire de santé.  En effet le certificat médical est desormais valable 3 ans.</li>
                                     <li>La fiche assurance (à remplir sur place).</li>
-                                    <li>Le cheque correspondant au prix de l'adhesion au club et licence ffme + assurance (aucune licence ne sera délivrée sans paiement)
-                                    </li>
+                                    <li>Le cheque correspondant au prix de l'adhesion au club et licence ffme + assurance (aucune licence ne sera délivrée sans paiement).</li>
                                 </ul>    
                             </div>
                             <div class="row">
@@ -239,82 +240,75 @@
                                     <i class="fa fa-download" aria-hidden="true"><br><a href="doc/formulaire-inscription-saison-2017-2018.pdf">Formulaire d'inscription</a></i>
                                 </div>
                                 <div class="col-md-3 col-6">
-                                    <i class="fa fa-download" aria-hidden="true"><br><a href="doc/QS-SPORT_cerfa_15699%5B608%5D.pdf">Questionnaire santé</a></i>
+                                    <i class="fa fa-download" aria-hidden="true"><br><a href="doc/QS-SPORT_cerfa_15699%5B608%5D.pdf">Questionnaire de santé</a></i>
                                 </div>
                                 <div class="col-md-3 col-6">
                                     <i class="fa fa-file" aria-hidden="true"><br><a href="doc/2018-notice-assurance.pdf">Notice assurance</a></i>
                                 </div>
                                 <div class="col-md-3 col-6">
-                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#Tarifs">Tarifs</button>
+                                    <i class="fa fa-file" aria-hidden="true" data-toggle="modal" data-target="#Tarifs"><br><a href="#">Tableaux des tarifs</a></i>
                                 </div>
-                            </div>
-    
-                                    
+                            </div>    
                                     
 <!-- Modal Tarifs-->                <div class="modal fade" id="Tarifs" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="ModalLabel2">Tarifs 2017-2017</h5>
+                                                    <h5 class="modal-title" id="ModalLabel2">Tarifs Saison 2017-2018</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
 <!-- tableau tarifs-->                          <div class="modal-body">
-                                            <table class="table table-responsive">
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Adultes</th>
-                                                    <th>Jeunes</th>
-                                                    <th>Famille* (adulte)</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sans assurance **</td>
-                                                    <td>89 &euro;</td>
-                                                    <td>56 &euro;</td>
-                                                    <td>65 &euro;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Assurance Base</td>
-                                                    <td>97 &euro;</td>
-                                                    <td>64 &euro;</td>
-                                                    <td>71 &euro;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Assurance Base+</td>
-                                                    <td>100 &euro;</td>
-                                                    <td>67 &euro;</td>
-                                                    <td>74 &euro;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Assurance Base++</td>
-                                                    <td>107 &euro;</td>
-                                                    <td>74 &euro;</td>
-                                                    <td>81 &euro;</td>
-                                                </tr>
-                                            </table>
-                                            <p>* tarif famille à partir de 3 personnes<br>** justificatif d'assurance personnel à fournir obligatoirement lors de l'inscription</p>
-                                            <table>
-                                                <caption>options facultatives</caption>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Prix</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>Ski pistes</td>
-                                                    <td>5 &euro;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Slackline</td>
-                                                    <td>5 &euro;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Trail</td>
-                                                    <td>10 &euro;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>VTT</td>
-                                                    <td>30 &euro;</td>
-                                                </tr>
-                                            </table>
+                                                    <table class="table table-responsive">
+                                                        <caption>Tarif Club et FFME en fonction de l'age et de l'assurance choisit :</caption>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Adultes</th>
+                                                            <th>Jeunes</th>
+                                                            <th>Famille* (adulte)</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sans assurance **</td>
+                                                            <td>89 &euro;</td>
+                                                            <td>56 &euro;</td>
+                                                            <td>65 &euro;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Assurance Base</td>
+                                                            <td>97 &euro;</td>
+                                                            <td>64 &euro;</td>
+                                                            <td>71 &euro;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Assurance Base+</td>
+                                                            <td>100 &euro;</td>
+                                                            <td>67 &euro;</td>
+                                                            <td>74 &euro;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Assurance Base++</td>
+                                                            <td>107 &euro;</td>
+                                                            <td>74 &euro;</td>
+                                                            <td>81 &euro;</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table>
+                                                        <caption>Options facultatives :</caption>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Ski pistes</th>
+                                                            <th>Slackline</th>
+                                                            <th>Trail</th>
+                                                            <th>VTT</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Prix</td>
+                                                            <td>5 &euro;</td>
+                                                            <td>5 &euro;</td>
+                                                            <td>10 &euro;</td>
+                                                            <td>30 &euro;</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>* tarif famille à partir de 3 personnes<br>** justificatif d'assurance personnel à fournir obligatoirement lors de l'inscription</p>
                                           </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -343,8 +337,11 @@
         <footer class="text-center">
             <div class="container rounded">
                 <hr>
-                <p id="footer">&copy; Glace et Roc 2017</p>
-                <a href="doc/reglement_interieur%202017.pdf">Réglement interieur 2017</a>
+                <p class="footer">&copy; Glace et Roc 2017</p>
+                <p class="footer">Site developpé par Benoite Lallemand :</p> 
+                <a href="https://github.com/piafben/escaladeGR"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/benoite-lallemand"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>                 
+                
+      
             </div>
         </footer>
         
