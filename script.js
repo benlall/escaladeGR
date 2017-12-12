@@ -1,34 +1,25 @@
 
- /* page scroll on click */
- /*$(function(){   
+/*$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("li a").on('click', function(event) {
 
-        var scroll = function() {   
-            $('.page-scroll a').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1000, 'easeInOutExpo');
-                event.preventDefault();
-            });       
-        } 
-    
-        scroll()
-            
-}); */
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
+      // Store hash
+      var hash = this.hash;
 
-	$(document).ready(function(){
-
-	    $('a[href^="#"]').on('click',function (e) {
-	        e.preventDefault();
-            
-	        var target = this.hash,
-	        $target = $(target);
-            
-	        $('html, body').stop().animate({
-	            'scrollTop': $target.offset().top
-	        }, 900, 'swing', function () {
-          window.location.hash = target;
-	        });
-	    });
-	});
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
