@@ -20,7 +20,6 @@ body{
     margin: 20px auto;
 }
 
-
 h1{
     font-family: "neoretrodrawregular";
     font-size: 5rem;
@@ -46,6 +45,8 @@ h1{
     margin: 20px auto;
     background-color: rgb(252,252,252);
 }
+
+#archives{}
 video{
     background-color: rgb(70,70,70);
 }
@@ -129,3 +130,6 @@ p, ul{
     text-align: center;
 }
 
+#returnTop{
+	color: rgb(62,62,62);
+}
