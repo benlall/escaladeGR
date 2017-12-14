@@ -1,4 +1,4 @@
 # escaladeGR
-site du club d'escalade G et R
-site ayant pour but mon recrutement à ma formation.
-Ce site est donc non validé par le club et non officiel.
+Site du club d'escalade G et R
+Site ayant pour but mon recrutement à la Wild Code School.
+Ce site n'est donc pas validé par le club.

@@ -4,10 +4,6 @@ body{
     font-family: Tahoma sans-serif;
 }
 
-*{
-    border: 1px none blue;
-}
-
 @font-face {
     font-family: 'neoretrodrawregular';
     src: url("neoretrodraw_regular_macroman/NEORD___-webfont.woff") format('woff');
@@ -46,10 +42,10 @@ h1{
     background-color: rgb(252,252,252);
 }
 
-#archives{}
 video{
     background-color: rgb(70,70,70);
 }
+
 h2 {
     margin: 10px;
     background-color: rgb(62,62,62);
@@ -57,6 +53,7 @@ h2 {
     color: rgb(252,252,252);
     font-family: "neoretrodrawregular";
 }
+
 .card{
     background-color: rgb(252,252,252);
     margin: 5px;
@@ -68,6 +65,7 @@ h4{
     background-color: rgb(252,252,252);
     border-radius: 10px;
 }
+
 .nouveau{
     font-weight: bold;
 }
@@ -87,12 +85,13 @@ h4{
 
 .btn-secondary:hover {
     background-color: rgb(106,106,106);
- }
+}
 
 table {
     border-collapse: separate;
     empty-cells: hide;
 }
+
 .table td, .table th{
     border: 1px solid #839FB5;
 }
@@ -117,6 +116,7 @@ p, ul{
 #reglement{
     margin: 20px 0;
 }
+
 #siteffme{
     color: rgb(0,154,217);
     margin: auto;
